@@ -1,7 +1,10 @@
+import { Sidebar } from "../Sidebar/sidebar";
+
 export const Fangear = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>Fan Gear</h1>
+      <Sidebar></Sidebar>
     </div>
   );
 };

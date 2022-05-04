@@ -35,7 +35,6 @@ export const Routing = () => {
         <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path="/wishlist" element={<Wishlist></Wishlist>}></Route>
       </Routes>
-      ;
     </>
   );
 };

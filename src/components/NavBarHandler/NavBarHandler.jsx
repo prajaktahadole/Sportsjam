@@ -10,6 +10,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
   const navigate = useNavigate();
+  const homeHandler = () => {
+    navigate("/");
+  };
   const signInHandler = () => {
     navigate("/login");
   };
@@ -20,14 +23,24 @@ export const NavBar = () => {
     navigate("/wishlist");
   };
   const nav = [
-    { title: "SPORTS", to: "/Sports" },
-    { title: "FITNESS", to: "/Fitness" },
-    { title: "SHOES", to: "/Shoes" },
-    { title: "CLOTHING", to: "/Clothing" },
-    { title: "ACCESSORIES", to: "/Accessories" },
-    { title: "LEISURE SPORTS", to: "/LeisureSports" },
-    { title: "FANGEAR", to: "/Fangear" },
-    { title: "BRANDS", to: "/Brands" },
+    { title: "SPORTS" },
+    { title: "FITNESS" },
+    { title: "SHOES" },
+    { title: "CLOTHING" },
+    { title: "ACCESSORIES" },
+    { title: "LEISURE SPORTS" },
+    { title: "FANGEAR" },
+    { title: "BRANDS" },
+  ];
+  const navmain = [
+    { title: "Sports", to: "/Sports" },
+    { title: "Fitness", to: "/Fitness" },
+    { title: "Shoes", to: "/Shoes" },
+    { title: "Clothing", to: "/Clothing" },
+    { title: "Accessories", to: "/Accessories" },
+    { title: "Leisure Sports", to: "/LeisureSports" },
+    { title: "Fangear", to: "/Fangear" },
+    { title: "Brands", to: "/Brands" },
   ];
   return (
     <>
@@ -59,7 +72,7 @@ export const NavBar = () => {
           </div>
         </div>
         <div className={styles.navBarLayer2}>
-          <div className={styles.navBarLayer2logo}>
+          <div className={styles.navBarLayer2logo} onClick={homeHandler}>
             <img src={logo} alt="" />
           </div>
           <div className={styles.navBarLayer2SearchDiv}>
@@ -79,9 +92,17 @@ export const NavBar = () => {
         </div>
         <div className={styles.navBarLayer3}>
           <div className={styles.navBarLayer3RoutesDiv}>
+            <div className={styles.navBarLayer3RoutesDivMain}>
+              <p>ALL</p>
+              <div className={styles.navBarLayer3RoutesDivMaincontent}>
+                {navmain.map((e) => (
+                  <Link to={e.to}>{e.title}</Link>
+                ))}
+              </div>
+            </div>
             {nav.map((e) => (
               <div className={styles.navBarLayer3Routes}>
-                <Link to={e.to}>{e.title}</Link>
+                <>{e.title}</>
               </div>
             ))}
           </div>

@@ -1,0 +1,35 @@
+.mainScroller {
+  margin-top: 0rem;
+  width: 12%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.productmap {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  overflow-y: scroll;
+}
+.productmap > a {
+  color: gray;
+  text-decoration: none;
+}
+.sorting {
+  margin-top: 0.7rem;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  overflow-y: scroll;
+}
+.filterbrands {
+  border: 1px solid grey;
+  height: 50px;
+  overflow-y: scroll;
+}
+.discount {
+  border: 1px solid grey;
+  height: 20px;
+}

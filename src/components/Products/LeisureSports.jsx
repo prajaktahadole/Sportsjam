@@ -1,7 +1,10 @@
+import { Sidebar } from "../Sidebar/sidebar";
+
 export const LeisureSports = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>LeisureSports</h1>
+      <Sidebar></Sidebar>
     </div>
   );
 };

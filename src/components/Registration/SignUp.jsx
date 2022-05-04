@@ -1,7 +1,7 @@
 export const Signup = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>Anjuman</h1>
     </div>
   );
 };

@@ -1,5 +1,7 @@
-export const Sports = ()=>{
-    return (
-        <div></div>
-    )
-}
+export const Sports = () => {
+  return (
+    <div>
+      <h1>Hello</h1>
+    </div>
+  );
+};

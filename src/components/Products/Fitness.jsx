@@ -1,5 +1,7 @@
-export const Fitness = ()=>{
-    return (
-        <div></div>
-    )
-}
+export const Fitness = () => {
+  return (
+    <div>
+      <h1>Hello</h1>
+    </div>
+  );
+};

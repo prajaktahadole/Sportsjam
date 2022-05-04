@@ -6,9 +6,19 @@ import ManIcon from "@mui/icons-material/Man";
 import SearchSharpIcon from "@mui/icons-material/SearchSharp";
 import logo from "../../ImageData/logo.jpg";
 import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
+  const navigate = useNavigate();
+  const signInHandler = () => {
+    navigate("/login");
+  };
+  const signUpHandler = () => {
+    navigate("/signup");
+  };
+  const wishListHandler = () => {
+    navigate("/wishlist");
+  };
   const nav = [
     { title: "SPORTS", to: "/Sports" },
     { title: "FITNESS", to: "/Fitness" },
@@ -23,15 +33,29 @@ export const NavBar = () => {
     <>
       <div className={styles.navBarWrapper}>
         <div className={styles.navBarLayer1}>
-          <div className={styles.navBarLayer1Support}>
-            <LocalPhoneIcon style={{ color: "white" }} />
-            <p>Call Us:+93-955543555</p>
-            <KeyboardDoubleArrowRightIcon style={{ color: "white" }}/>
-            <p>Sign in</p>
-            <ManIcon style={{ color: "white" }} />
-            <p>Create Account</p>
-            <FavoriteIcon style={{ color: "white" }} />
-            <p>WishList</p>
+          <div className={styles.navBarLayer1Actions}>
+            <div className={styles.navBarLayer1Support}>
+              <LocalPhoneIcon style={{ color: "white" }} />
+              <p>Call Us:+93-955543555</p>
+            </div>
+            <div className={styles.navBarLayer1Signin} onClick={signInHandler}>
+              <KeyboardDoubleArrowRightIcon style={{ color: "white" }} />
+              <p>Sign in</p>
+            </div>
+            <div
+              className={styles.navBarLayer1CreateAcc}
+              onClick={signUpHandler}
+            >
+              <ManIcon style={{ color: "white" }} />
+              <p>Create Account</p>
+            </div>
+            <div
+              className={styles.navBarLayer1Wishlist}
+              onClick={wishListHandler}
+            >
+              <FavoriteIcon style={{ color: "white" }} />
+              <p>WishList</p>
+            </div>
           </div>
         </div>
         <div className={styles.navBarLayer2}>

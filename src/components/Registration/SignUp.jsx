@@ -1,4 +1,4 @@
-export const Accessories = () => {
+export const Signup = () => {
   return (
     <div>
       <h1>Hello</h1>

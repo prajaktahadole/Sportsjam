@@ -1,5 +1,7 @@
-export const Fangear = ()=>{
-    return (
-        <div></div>
-    )
-}
+export const Fangear = () => {
+  return (
+    <div>
+      <h1>Hello</h1>
+    </div>
+  );
+};

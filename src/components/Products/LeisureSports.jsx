@@ -1,5 +1,7 @@
-export const LeisureSports = ()=>{
-    return (
-        <div></div>
-    )
-}
+export const LeisureSports = () => {
+  return (
+    <div>
+      <h1>Hello</h1>
+    </div>
+  );
+};

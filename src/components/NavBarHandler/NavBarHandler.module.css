@@ -1,0 +1,104 @@
+.navBarWrapper {
+  width: 100%;
+  margin: auto;
+  height: 10rem;
+  position: relative;
+}
+.navBarLayer1 {
+  width: 100%;
+  background-color: black;
+  margin: auto;
+  height: 20%;
+}
+.navBarLayer1Support {
+  padding-top: 0.1rem;
+  display: flex;
+  margin-left: 68%;
+}
+.navBarLayer1Support > p {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0rem;
+  color: white;
+  font-weight: lighter;
+  font-size: small;
+}
+.navBarLayer2 {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  width: 100%;
+  background-color: white;
+  margin: auto;
+  height: 55%;
+  border-bottom: 1px solid rgb(236, 235, 235);
+  display: flex;
+  justify-content: space-around;
+  /* overflow: hidden; */
+}
+.navBarLayer2logo {
+  overflow: hidden;
+}
+.navBarLayer2SearchDiv {
+  border: 1px solid rgb(188, 186, 186);
+  width: 30%;
+  margin: auto;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  /* height: 60%; */
+}
+.navBarLayer2Search {
+  width: 90%;
+  height: 60%;
+}
+.navBarLayer2Search > input {
+  /* outline: none; */
+  border: none;
+  height: 100%;
+  width: 90%;
+  color: rgb(101, 100, 100);
+  margin-left: 20px;
+  text-align: left;
+}
+.navBarLayer2SearchIcon {
+  width: 10%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBarLayer2Cart {
+  display: flex;
+}
+.navBarLayer3 {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgb(196, 193, 193);
+  height: 20%;
+}
+.navBarLayer3RoutesDiv {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2.5rem;
+  height: 100%;
+}
+.navBarLayer3Routes {
+  display: flex;
+  padding:0.2rem;
+  align-items: center;
+}
+.navBarLayer3Routes > a {
+  color: black;
+  text-decoration: none;
+}
+/* .navBarLayer3RoutesDiv div {
+  height: inherit;
+} */
+.navBarLayer3Routes:hover {
+  background-color: black;
+}
+
+.navBarLayer3Routes a:hover {
+  color: white;
+}

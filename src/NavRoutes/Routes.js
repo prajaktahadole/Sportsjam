@@ -11,12 +11,14 @@ import { Signup } from "../components/Registration/SignUp";
 import { Wishlist } from "../components/WishListHandler/WishListHandler";
 import { NavBar } from "../components/NavBarHandler/NavBarHandler";
 import { Sports } from "../components/Products/Sports";
+import { Landing } from "../components/LandingHandler/LandingHandler";
 
 export const Routing = () => {
   return (
     <>
     <NavBar></NavBar>
       <Routes>
+      <Route path="/" element={<Landing></Landing>}></Route>
         <Route
           path="/Accessories"
           element={<Accessories></Accessories>}

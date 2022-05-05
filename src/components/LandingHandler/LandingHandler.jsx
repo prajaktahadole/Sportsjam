@@ -1,8 +1,17 @@
-export const Landing = () => {
+import {Carousel1} from '../Carousel/carousel'
+
+export const Landing = ()=>{
   return (
-    <>
-      <div className="ab">hc dc </div>
-      <div className="bv">jndic</div>
-    </>
-  );
-};
+    <div>
+       <Carousel1></Carousel1>
+
+    <div>home</div>
+
+    </div>
+  )
+  
+
+  
+    
+  
+}

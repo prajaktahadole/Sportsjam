@@ -5,6 +5,7 @@ export const Abtrainers = () => {
     <div>
       <h1>Abtrainers</h1>
       <Sidebar></Sidebar>
+      
     </div>
   );
 };

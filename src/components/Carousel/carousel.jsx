@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel'
-import './carousel.css';
+// import styles from './carousel.module.css';
 
 export const Carousel1  = ()=>{
     return(

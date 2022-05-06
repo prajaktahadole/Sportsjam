@@ -1,22 +1,17 @@
 
 
 .homeDivMain{
-   
+   text-align: center;
     margin: auto;
 }
-.homeDivMain>div{
-    width: 98%;
-    margin: auto;
-    margin-bottom: 30px;
-}
+
 .homeDivMain > div {
   width: 98%;
   margin: auto;
   margin-bottom: 30px;
 }
 
-.homeDiv3,
-.homeDiv6 {
+.homeDiv3, .homeDiv6 {
   display: flex;
   margin: auto;
   /* border: 1px solid red; */
@@ -33,7 +28,7 @@
   margin-right: 5%;
 }
 
-img {
+.home_imgg{
   width: 99%;
 }
 

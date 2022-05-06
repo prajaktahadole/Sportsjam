@@ -47,7 +47,7 @@ export const Landing = ()=>{
 
     {div1data.map((e) => (
               <div className='overlay-img-box'>
-                <img src={e.image} alt=""></img>
+                <img src={e.image} alt=""  className='home_imgg'></img>
                 
                 <div className="img-overlay">
                 <h5 className="img-title">{e.title}</h5>
@@ -79,7 +79,7 @@ export const Landing = ()=>{
     {div3data.map((e) => (
               <div className='homeDiv3inner'>
               <>
-                <img src={e.image} alt=""></img>
+                <img src={e.image} alt="" className='home_imgg' ></img>
                  <h5>{e.title}</h5>
               </>
               </div>
@@ -89,7 +89,7 @@ export const Landing = ()=>{
 
 
     <div className='homeDiv4'>
-      <img src='https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/asics-tennis-shoes.jpg'></img>
+      <img  className='home_imgg'  src='https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/asics-tennis-shoes.jpg'  ></img>
     </div>
 
 
@@ -106,7 +106,7 @@ export const Landing = ()=>{
 
     <div className='homeDiv6'>
       <div  className='homeDiv3inner'>
-          <img src='https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/bta-store.jpg'></img>
+          <img className='home_imgg' src='https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/bta-store.jpg'></img>
       </div>
       <div  className='homeDiv3inner  homeDivinneright'>
           <h3>ABOUT SPORTSJAM</h3>
@@ -115,7 +115,7 @@ export const Landing = ()=>{
              with no shipping charges if you purchase above Rs.1000. Scout through your favourite brands with latest technologies.
             Just click & be its proud owner, at the best available price in the market. Come, help us help you to fly high with your new &
            improved game with high quality sportsgear!</p>
-           <button>FIND OUR STORE</button>
+           <button  class="btn">FIND OUR STORE</button>
       </div>
     </div>
 
@@ -131,10 +131,8 @@ export const Landing = ()=>{
         reply. Even during giving the free tshirt, you guys called to know the size, but unfortunately the size is large
         on me. Any chances I can exchange with M size. Although I am loving my new racquet. - <b>Rajnish, New Delhi</b>
     </p>
-    <a class="btn" href="/pages/testimonials/pgid-1304966.aspx">View All</a>
-        
+    <a class="btn" href="/pages/testimonials/pgid-1304966.aspx">View All</a>    
     </div>
-
 
 
 

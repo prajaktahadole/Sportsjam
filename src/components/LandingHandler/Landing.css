@@ -1,7 +1,13 @@
-.homeDivMain {
-  justify-content: center;
-  text-align: center;
-  margin: auto;
+
+
+.homeDivMain{
+   
+    margin: auto;
+}
+.homeDivMain>div{
+    width: 98%;
+    margin: auto;
+    margin-bottom: 30px;
 }
 .homeDivMain > div {
   width: 98%;

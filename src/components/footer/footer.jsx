@@ -32,31 +32,31 @@ export const Footer = () => {
       <div className={styles.footerdiv1}>
         <div>
           <CardGiftcard style={{ fontSize: 70 }}></CardGiftcard>
-          <a href="#">E-gift Voucher</a>
+          <a className="flink" href="#">E-gift Voucher</a>
         </div>
         <div>
           <WorkspacePremiumOutlinedIcon
             style={{ fontSize: 70 }}
           ></WorkspacePremiumOutlinedIcon>
-          <a href="#">Reward Points</a>
+          <a className="flink" href="#">Reward Points</a>
         </div>
         <div>
           <MenuBookIcon style={{ fontSize: 70 }}></MenuBookIcon>
-          <a href="#">Buyers Guide</a>
+          <a className="flink" href="#">Buyers Guide</a>
         </div>
         <div>
           <LocalShippingIcon style={{ fontSize: 70 }}></LocalShippingIcon>
-          <a href="#">Express Shipping</a>
+          <a className="flink" href="#">Express Shipping</a>
         </div>
         <div>
           <GppGoodIcon style={{ fontSize: 70 }}></GppGoodIcon>
-          <a href="#">Secure Shopping</a>
+          <a className="flink" href="#">Secure Shopping</a>
         </div>
         <div>
           <BrightnessAutoOutlinedIcon
             style={{ fontSize: 70 }}
           ></BrightnessAutoOutlinedIcon>
-          <a href="#">100% Authentic</a>
+          <a className="flink" href="#">100% Authentic</a>
         </div>
       </div>
 
@@ -66,7 +66,7 @@ export const Footer = () => {
 
           {Fone.map((e) => (
             <div>
-              <a href="#">{e}</a>
+              <a className="flink" href="#">{e}</a>
             </div>
           ))}
         </div>
@@ -76,7 +76,7 @@ export const Footer = () => {
 
           {Ftwo.map((e) => (
             <div>
-              <a href="#">{e}</a>
+              <a className="flink" href="#">{e}</a>
             </div>
           ))}
         </div>
@@ -92,16 +92,16 @@ export const Footer = () => {
           <br />
           <h6>CONNECT WITH US</h6>
           <li class="soc-icon">
-            <a href="https://www.facebook.com/Sportsjam.in" target="_blank">
+            <a className="flink" href="https://www.facebook.com/Sportsjam.in" target="_blank">
               <FacebookIcon></FacebookIcon>
             </a>
-            <a href="https://twitter.com/SportsJamIn" target="_blank">
+            <a className="flink" href="https://twitter.com/SportsJamIn" target="_blank">
               <TwitterIcon></TwitterIcon>
             </a>
-            <a href="https://www.instagram.com/sportsjam.in/" target="_blank">
+            <a className="flink" href="https://www.instagram.com/sportsjam.in/" target="_blank">
               <InstagramIcon></InstagramIcon>
             </a>
-            <a
+            <a className="flink"
               href="https://www.youtube.com/channel/UC-eZWeqy5zPUea1ykX7PWAg"
               target="_blank"
             >

@@ -159,10 +159,10 @@
 }
 .navBarLayer3RoutesDivMain:hover .navBarLayer3RoutesDivMaincontent {
   margin-top: 9.5rem;
-  margin-left: 3rem;
-  display: flex;
-  flex-direction: column;
-  width: 10%;
+  margin-left: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: inherit;
   font-weight: 200px;
   text-align: center;
 }

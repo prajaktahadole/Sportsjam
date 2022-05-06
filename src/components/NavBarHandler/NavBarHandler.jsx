@@ -7,6 +7,7 @@ import SearchSharpIcon from "@mui/icons-material/SearchSharp";
 import logo from "../../ImageData/logo.jpg";
 import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
 import { Link, useNavigate } from "react-router-dom";
+import { nav,navmain } from "../../Addressmaps/maps";
 
 export const NavBar = () => {
   const navigate = useNavigate();
@@ -22,26 +23,6 @@ export const NavBar = () => {
   const wishListHandler = () => {
     navigate("/wishlist");
   };
-  const nav = [
-    { title: "SPORTS" },
-    { title: "FITNESS" },
-    { title: "SHOES" },
-    { title: "CLOTHING" },
-    { title: "ACCESSORIES" },
-    { title: "LEISURE SPORTS" },
-    { title: "FANGEAR" },
-    { title: "BRANDS" },
-  ];
-  const navmain = [
-    { title: "Sports", to: "/Sports" },
-    { title: "Fitness", to: "/Fitness" },
-    { title: "Shoes", to: "/Shoes" },
-    { title: "Clothing", to: "/Clothing" },
-    { title: "Accessories", to: "/Accessories" },
-    { title: "Leisure Sports", to: "/LeisureSports" },
-    { title: "Fangear", to: "/Fangear" },
-    { title: "Brands", to: "/Brands" },
-  ];
   return (
     <>
       <div className={styles.navBarWrapper}>

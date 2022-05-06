@@ -1,9 +1,9 @@
 import { Sidebar } from "../Sidebar/sidebar";
 
-export const Fangear = () => {
+export const Shuttlecock = () => {
   return (
     <div>
-      <h1>Fan Gear</h1>
+      <h1>Shuttlecock</h1>
       <Sidebar></Sidebar>
     </div>
   );

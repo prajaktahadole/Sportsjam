@@ -1,0 +1,133 @@
+.container-sliding {
+    width: 85%;
+    height: 450px;
+    margin: 10px auto;
+    display: flex;
+    margin-top: 50px;
+  }
+  .carousal-1 {
+    height: 100%;
+    width: 50%;
+  
+    position: relative;
+    overflow: hidden;
+  }
+  .carousal-2 {
+    height: 100%;
+    width: 50%;
+    margin-left: 30px;
+  
+    position: relative;
+    overflow: hidden;
+  }
+  .slider_1 {
+    height: 100%;
+    display: flex;
+    width: 300%;
+    transition: all 0.4s;
+  }
+  .slider_2 {
+    height: 100%;
+    display: flex;
+    width: 400%;
+    transition: all 0.4s;
+  }
+  .slider_2 section {
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+  }
+  .controls span {
+    font-size: 15px;
+  }
+  
+  .heading-slider {
+    font-size: 20px;
+    padding: 5% 0%;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+  }
+  .description-slider {
+    font-size: 15px;
+    color: darkslategray;
+    font-weight: 300;
+    padding-bottom: 3%;
+  }
+  .slider_2 section div {
+    color: darkslategray;
+    border: 1px solid black;
+    font-size: 15px;
+    padding: 15px 20px;
+    width: 85px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  
+  .slider_2 section div:hover{
+    cursor: pointer;
+  }
+  
+  .controls {
+    margin-left: 115px;
+    height: 50px;
+    width: 41.4%;
+    margin-top: 0%;
+    display: flex;
+  }
+  .slide1 {
+    font-size: 20px;
+    margin-right: 30px;
+    font-weight: 700;
+    margin-top: 10;
+    text-align: center;
+    padding: 15px 5px;
+    cursor: pointer;
+  }
+  .slide1:hover {
+    background-color: black;
+    color: white;
+  }
+  .slide2 {
+    font-size: 20px;
+    margin-right: 30px;
+    margin-top: 10;
+    text-align: center;
+    padding: 15px 5px;
+    font-weight: 700;
+  }
+  .slide2:hover {
+    background-color: black;
+    color: white;
+  }
+  .slide3 {
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 10;
+    text-align: center;
+    padding: 15px 5px;
+    font-weight: 700;
+  }
+  .slide3:hover {
+    background-color: black;
+    color: white;
+  }
+  .slide4 {
+    font-size: 20px;
+    margin-top: 10;
+    text-align: center;
+    padding: 15px 6px;
+    font-weight: 700;
+  }
+  .slide4:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+  #carousel:hover .left-arrow, 
+#carousel:hover .right-arrow{
+visibility: visible;
+}
+  

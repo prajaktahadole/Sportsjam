@@ -1,6 +1,6 @@
 import {Carousel1} from '../Carousel/carousel'
-import d3img5 from '../../ImageData/img5.jpg';
-import d3img6 from '../../ImageData/img6.jpg';
+//import {Carousel2} from '../Carousel/carousel2'
+import {Carousel3 }from '../Carousel/carousel3'
 import './Landing.css';
 
 export const Landing = ()=>{
@@ -48,8 +48,11 @@ export const Landing = ()=>{
 
 
     <div className='homeDiv5'>
-      div5
+
+      {/* <Carousel2></Carousel2> */}
+   
     </div>
+
 
 
 
@@ -73,7 +76,7 @@ export const Landing = ()=>{
 
 
     <div className='homeDiv7'>
-      div7
+      <Carousel3 ></Carousel3>
     </div>
 
 

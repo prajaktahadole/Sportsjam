@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import { Login } from "../components/Registration/Login";
-import { Signup } from "../components/Registration/SignUp";
+import { Login } from "../components/Registration/signin/Login";
+import { Signup } from "../components/Registration/createAccount/SignUp";
 import { Wishlist } from "../components/WishListHandler/WishListHandler";
 import { NavBar } from "../components/NavBarHandler/NavBarHandler";
 import { Landing } from "../components/LandingHandler/LandingHandler";

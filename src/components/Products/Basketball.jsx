@@ -1,9 +1,9 @@
 import { Sidebar } from "../Sidebar/sidebar";
 
-export const Accessories = () => {
+export const Basketball = () => {
   return (
     <div>
-      <h1>Accessories</h1>
+      <h1>Basketball</h1>
       <Sidebar></Sidebar>
     </div>
   );

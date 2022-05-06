@@ -1,23 +1,14 @@
 import styles from "./sidebar.module.css";
+import { navmain } from "../../Addressmaps/maps";
 import { Link } from "react-router-dom";
 
 export const Sidebar = () => {
-  const arch = [
-    { title: "Sports", to: "/Sports" },
-    { title: "Fitness", to: "/Fitness" },
-    { title: "Shoes", to: "/Shoes" },
-    { title: "Clothing", to: "/Clothing" },
-    { title: "Accessories", to: "/Accessories" },
-    { title: "Leisure Sports", to: "/LeisureSports" },
-    { title: "Fangear", to: "/Fangear" },
-    { title: "Brands", to: "/Brands" },
-  ];
   return (
     <>
       <div className={styles.mainScroller}>
         <h4>Category Menu</h4>
         <div className={styles.productmap}>
-          {arch.map((e) => (
+          {navmain.map((e) => (
             <Link to={e.to}>{e.title}</Link>
           ))}
         </div>

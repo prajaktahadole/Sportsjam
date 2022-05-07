@@ -1,12 +1,11 @@
 
-
 import { Sidebar } from "../Sidebar/sidebar";
-import { goggles } from '../../configs/Goggles'
+import { FitnessMat } from '../../configs/FitnessMats'
 // import { Link } from "react-router-dom";
 import { Footer } from "../footer/footer";
 import './sports.css'
 
-export const Goggles = () => {
+export const Fitness = () => {
 
   return (
     <>
@@ -17,7 +16,7 @@ export const Goggles = () => {
         </div>
 
         <div className="grid-format">
-          {goggles.map((el) => {
+          {FitnessMat.map((el) => {
             return (
               <>
                 <div >
@@ -27,13 +26,13 @@ export const Goggles = () => {
                       <img src={el.img} />
                     </div>
                     <div className='producttitle'>
-                      <p key={el.id}>{el.name}</p>
+                      <p key={el.id}>{el.title}</p>
                     </div>
                     <div className="price-button">
                       <div className="price-list">
                         <p className="productprice-linethrough" key={el.id}>${el.price}</p>
                         <p className="productprice" key={el.id}>${el.mrp}</p>
-                        <p className="product-discount" key={el.id}>{el.discount}</p>
+                        <p className="product-discount" key={el.id}>{el.discount}%off</p>
                       </div>
                       <div className="btn"><button>Cart</button></div>
                     </div>

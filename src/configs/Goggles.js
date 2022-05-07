@@ -1,4 +1,4 @@
-export const Goggles = [
+export const goggles = [
     {
       name: "Speedo Futura Biofuse Swimming Goggles (Black/Smoke)",
       desc: "Speedo Futura Biofuse Swimming Goggles (Black/Smoke) ",

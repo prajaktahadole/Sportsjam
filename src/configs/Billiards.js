@@ -1,4 +1,4 @@
-export const Billiards = [
+export const Billiard = [
     {
       "name": "PowerGlide Flare Pool Table (57804)",
       "desc": "PowerGlide Flare Pool Table (57804) ",

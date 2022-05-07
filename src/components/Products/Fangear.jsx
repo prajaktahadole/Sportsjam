@@ -1,12 +1,12 @@
 
 
 import { Sidebar } from "../Sidebar/sidebar";
-import { goggles } from '../../configs/Goggles'
-// import { Link } from "react-router-dom";
+import { Rackets } from '../../configs/Badminton'
 import { Footer } from "../footer/footer";
+// import { Link } from "react-router-dom";
 import './sports.css'
 
-export const Goggles = () => {
+export const Fangear = () => {
 
   return (
     <>
@@ -17,7 +17,7 @@ export const Goggles = () => {
         </div>
 
         <div className="grid-format">
-          {goggles.map((el) => {
+          {Rackets.map((el) => {
             return (
               <>
                 <div >
@@ -27,13 +27,13 @@ export const Goggles = () => {
                       <img src={el.img} />
                     </div>
                     <div className='producttitle'>
-                      <p key={el.id}>{el.name}</p>
+                      <p key={el.id}>{el.title}</p>
                     </div>
                     <div className="price-button">
                       <div className="price-list">
                         <p className="productprice-linethrough" key={el.id}>${el.price}</p>
                         <p className="productprice" key={el.id}>${el.mrp}</p>
-                        <p className="product-discount" key={el.id}>{el.discount}</p>
+                        <p className="product-discount" key={el.id}>{el.discount}%off</p>
                       </div>
                       <div className="btn"><button>Cart</button></div>
                     </div>

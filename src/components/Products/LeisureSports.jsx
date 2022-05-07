@@ -1,12 +1,12 @@
 
 
 import { Sidebar } from "../Sidebar/sidebar";
-import { goggles } from '../../configs/Goggles'
+import { Rackets } from '../../configs/Badminton'
 // import { Link } from "react-router-dom";
 import { Footer } from "../footer/footer";
 import './sports.css'
 
-export const Goggles = () => {
+export const LeisureSports = () => {
 
   return (
     <>
@@ -17,7 +17,7 @@ export const Goggles = () => {
         </div>
 
         <div className="grid-format">
-          {goggles.map((el) => {
+          {Rackets.map((el) => {
             return (
               <>
                 <div >

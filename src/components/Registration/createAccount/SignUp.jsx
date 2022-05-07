@@ -1,3 +1,4 @@
+ import {  useState,useEffect } from "react";
  import style from "./Signup.module.css";
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
@@ -13,12 +14,46 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {Footer} from '../../footer/footer'
+
+
 
 
 
 const theme = createTheme();
 
 export const Signup = () => {
+const [values, setValues] = useState({
+  firstName: '',
+  mobileno: '',
+  email:'',
+  password:'',
+  confirmpassword: '',
+
+})
+
+const [error, setError] = useState({
+
+})
+
+const handleChange = e =>{
+  const { name ,value } = e.target
+  setValues({
+    ...values,
+    [name]:value 
+  })
+}
+
+// handleSubmit = (event) => {
+//   alert(`${this.state.firstName} ${this.state.lastName}  Registered Successfully !!!!`)
+//   console.log(this.state);
+//   this.setState({
+//       firstName: "",
+//       lastName: "",
+//       password: '',
+//       gender: "",
+//   })
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -110,9 +145,11 @@ export const Signup = () => {
                   autoComplete="given-name"
                   required
                   fullWidth
-                  
+                  name="firstName"
                   id="firstName"
                   autoFocus
+                  value={values.firstName}
+                  onChange={handleChange}
                 />
               </Grid>
               
@@ -124,9 +161,11 @@ export const Signup = () => {
                 className={style.TextFieldarea}
                   required
                   fullWidth
-                  id="lastName"
-                  name="lastName"
+                  id="mobileno"
+                  name="mobileno"
                   autoComplete="family-name"
+                  value={values.mobileno}
+                  onChange={handleChange}
                 />
               </Grid>
 
@@ -141,6 +180,9 @@ export const Signup = () => {
                   id="email"
                   name="email"
                   autoComplete="email"
+                  value={values.email}
+                  onChange={handleChange}
+
                 />
               </Grid>
 
@@ -152,10 +194,12 @@ export const Signup = () => {
                 className={style.TextFieldarea}
                   required
                   fullWidth
+                  id="password"
                   name="password"
                   type="password"
-                  id="password"
                   autoComplete="new-password"
+                  value={values.password}
+                  onChange={handleChange}
                 />
               </Grid>
                
@@ -169,10 +213,12 @@ export const Signup = () => {
                   required
                   fullWidth
                   
-                  name="password"
+                  name="confirmpassword"
                   type="password"
-                  id="password"
+                  id="confirmpassword"
                   autoComplete="new-password"
+                  value={values.confirmpassword}
+                  onChange={handleChange}
                 />
               </Grid>
 
@@ -199,6 +245,8 @@ export const Signup = () => {
         </Box>
       </Container>
     </ThemeProvider>
+    <Footer></Footer>
+
        
     </div>
     </div>

@@ -29,7 +29,7 @@ export const NavBar = () => {
         <div className={styles.navBarLayer1}>
           <div className={styles.navBarLayer1Actions}>
             <div className={styles.navBarLayer1Support}>
-              <LocalPhoneIcon style={{ color: "white" }} />
+              <LocalPhoneIcon style={{ color: "white", fontSize:"20px" }} />
               <p>Call Us:+93-955543555</p>
             </div>
             <div className={styles.navBarLayer1Signin} onClick={signInHandler}>

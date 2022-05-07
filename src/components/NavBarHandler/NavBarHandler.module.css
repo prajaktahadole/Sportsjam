@@ -21,36 +21,40 @@
   margin-left: 60%;
 }
 .navBarLayer1Support {
+  margin-top: .2rem;
   display: flex;
   justify-content: space-around;
   color: white;
   font-weight: lighter;
   font-size: 15px;
-  align-items: center;
+  /* align-items: center; */
 }
 .navBarLayer1Signin {
+  margin-top: .2rem;
   display: flex;
   justify-content: space-around;
   color: white;
   font-weight: lighter;
   font-size: 15px;
-  align-items: center;
+  /* align-items: center; */
 }
 .navBarLayer1Wishlist {
+  margin-top: .2rem;
   display: flex;
   justify-content: space-around;
   color: white;
   font-weight: lighter;
   font-size: 15px;
-  align-items: center;
+  /* align-items: center; */
 }
 .navBarLayer1CreateAcc {
+  margin-top: .2rem;
   display: flex;
   justify-content: space-around;
   color: white;
   font-weight: lighter;
   font-size: 15px;
-  align-items: center;
+  /* align-items: center; */
 }
 .navBarLayer2 {
   padding: 1rem 1.5rem 1.5rem 1.5rem;

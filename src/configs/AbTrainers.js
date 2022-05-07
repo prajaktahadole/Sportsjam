@@ -5,7 +5,7 @@ export const AbTrainers = [
     "img": "https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/FTACTNPWRL.jpg",
     "currency": "INR ",
     price: "4350",
-    mrp: "5698",
+    mrp: "3698",
     "discount": "15"
   },
   {

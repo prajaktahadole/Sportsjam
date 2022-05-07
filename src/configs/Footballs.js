@@ -30,42 +30,7 @@ export const footballs = [
       mrp: "1399",
       discount: "30% off",
     },
-    
    
-    
-    {
-      title: "Nike React Football (White/Black)",
-      desc:
-        "\nThe Nike React Soccer Ball holds its shape and offers high visibility on the field with a durable construction and vibrant graphics. ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "1295",
-      mrp: "1165",
-      discount: "10% off",
-    },
-    {
-      title: "Nike Pitch Football (Orange/Blue)",
-      desc:
-        "\nThe Nike Pitch Soccer Ball holds its shape and offers high visibility on the field with a durable construction and vibrant graphics. ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "1295",
-      mrp: "1165",
-      discount: "10% off",
-    },
-    {
-      title: "Nike Mercurial Fade Football (Yellow)",
-      desc:
-        "\nThe Nike Mercurial Fade Soccer Ball holds its shape and offers high visibility on the field with a durable construction and vibrant graphics. ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "1295",
-      mrp: "1165",
-      discount: "10% off",
-    },
     {
       title: "Nike Mercurial Veer Football (White/Pink Blast)",
       desc:
@@ -99,79 +64,8 @@ export const footballs = [
       mrp: "717.94",
       discount: "30% off",
     },
-    {
-      title: "Nike Netherlands Prestige Football",
-      desc:
-        "\nNetherlands Prestige Football is a tough design that's crafted for ultimate consistency and durability on the pitch. ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "1595",
-      mrp: "1356",
-      discount: "15% off",
-    },
-    {
-      title: "Nike T90 Seeker Football",
-      desc: "\nSize 5 ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "1295",
-      mrp: "1230",
-      discount: "5% off",
-    },
-    {
-      title: "NIKE Man Utd Supporters Football",
-      desc: "\nSize 5 ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "1295",
-      mrp: "1230",
-      discount: "5% off",
-    },
-    {
-      title: "Nike Manchester United Prestige Football",
-      desc:
-        "\nManchester United Prestige Football offers ultimate consistency and durability on the pitch. ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "1795",
-      mrp: "1616",
-      discount: "10% off",
-    },
-    {
-      title: "NIKE Manchester City Supporters Football",
-      desc:
-        "The Manchester City Supporters Football is made with signature team details and durable materials for true flight and precision striking. Size 5 ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "1495",
-      mrp: "1420",
-      discount: "5% off",
-    },
-    {
-      title: "Nike FCB Supporters Football",
-      desc: "\nSize 5 ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "1495",
-      mrp: "1420",
-      discount: "5% off",
-    },
-    {
-      title: "Nike FCB Supporters Football",
-      desc: "\nSize 5 ",
-      img:
-        "https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NKSC2699-739L.jpg",
-      currency: "INR ",
-      price: "1495",
-      mrp: "1345",
-      discount: "10% off",
-    },
+    
+    
     {
       title: "Nike Duro Strike Football",
       desc: "\nSize 5 ",
@@ -182,57 +76,7 @@ export const footballs = [
       mrp: "1435",
       discount: "10% off",
     },
-    {
-      title: "Nike Strike Football",
-      desc: "\nSize 5 ",
-      img:
-        "https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NKSC2729-012L.jpg",
-      currency: "INR ",
-      price: "1295",
-      mrp: "1165",
-      discount: "10% off",
-    },
-    {
-      title: "Nike Strike Football",
-      desc: "\nSize 5 ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "1295",
-      mrp: "1165",
-      discount: "10% off",
-    },
-    {
-      title: "Nike CR7 Prestige Football (Deep Royal/Black)",
-      desc:
-        "\nThe Nike CR7 Prestige Soccer Ball holds its shape and offers high visibility on the field with a durable construction and vibrant graphics. ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "1795",
-      mrp: "1615",
-      discount: "10% off",
-    },
-    {
-      title: "Nike Arsenal Skills Football (Size 1)",
-      desc: "Nike Arsenal Skills Football (Size 1) ",
-      img:
-        "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-      currency: "INR ",
-      price: "995",
-      mrp: "695",
-      discount: "30% off",
-    },
-    {
-      title: "Nike Pitch La Liga Football (Orange/Blue)",
-      desc: "Nike Pitch La Liga Football (Orange/Blue). Size 5 ",
-      img:
-        "https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NKSC2992-415L.jpg",
-      currency: "INR ",
-      price: "1295",
-      mrp: "1295",
-      discount: "0% off",
-    },
+  
     {
       title: "Nike Pitch La Liga Football (Yellow/Purple)",
       desc: "Nike Pitch La Liga Football (Yellow/Purple). Size 5 ",
@@ -243,16 +87,7 @@ export const footballs = [
       mrp: "1295",
       discount: "0% off",
     },
-    {
-      title: "Nike Pitch Mercurial Fade Football (Purple)",
-      desc: "Nike Pitch Mercurial Fade Football (Purple). Size 5 ",
-      img:
-        "https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NKSC3023-560M.jpg",
-      currency: "INR ",
-      price: "1495",
-      mrp: "1495",
-      discount: "0% off",
-    },
+   
     {
       title: "Nike Pitch Mercurial Fade Football (Pink)",
       desc: "Nike Pitch Mercurial Fade Football (Pink) ",

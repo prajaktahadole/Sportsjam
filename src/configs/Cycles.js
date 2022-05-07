@@ -68,8 +68,8 @@ export const cycles = [
       "img": "https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/UTCY200098L.jpg",
       "currency": "INR ",
       price: "5900",
-      mrp: "5900",
-      "discount": "0% off"
+      mrp: "5920",
+      "discount": "10% off"
     },
     {
       title: "UT K5 Kids Bike (20 Inch)",

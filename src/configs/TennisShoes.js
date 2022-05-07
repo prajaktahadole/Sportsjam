@@ -1,4 +1,4 @@
-export const TennisShoes = [
+export const TennisShoe = [
     {
       "name": "Donic Daytona Table Tennis Shoes",
       "desc": "Donic Daytona Table Tennis Shoes ",

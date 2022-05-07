@@ -1,4 +1,4 @@
-export const KitBags = [
+export const kitbag = [
 
   {
     img:

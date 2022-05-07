@@ -27,69 +27,8 @@ export const BatCases=[
         "discount": "0% off"
     },
    
-    {
-        title: "Butterfly Aluminum Table Tennis Case (Silver)",
-        "desc": "Butterfly Aluminium Racket Case. ",
-        "img": "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-        "currency": "INR ",
-        price: "5465",
-        mrp: "3825",
-        "discount": "30% off"
-    },
-    {
-        title: "Tibhar Alum Cube Table Tennis Case",
-        "desc": "Protect your bat with the optimum protection box. This is a very robust case made from aluminium, with corner protections. In 3D-optic. Incorporates a thick foam inlay for one bat and three balls. ",
-        "img": "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-        "currency": "INR ",
-        price: "4150",
-        mrp: "3525",
-        "discount": "15% off"
-    },
-    {
-        title: "Tibhar Insulated Table Tennis Case",
-        "desc": "Very stable, long-life bat case made from neoprene with high isolation power. The bat is perfectly protected against exterior damages thanks to the foam integrated in the walls and inside the case, but also against heat and cold thanks to the insulation fabric. The outer fabric is water repellent and protects the bat against humidity and water damages. The bat case features a big main compartment with a long and two-way zipper, an additional little pocket for the small gear. Easy handling. This ",
-        "img": "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-        "currency": "INR ",
-        price: "1350",
-        mrp: "1080",
-        "discount": "20% off"
-    },
-    {
-        title: "Butterfly Nakama Table Tennis Case",
-        "desc": "Butterfly Nakama Table Tennis Case ",
-        "img": "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-        "currency": "INR ",
-        price: "1600",
-        mrp: "1200",
-        "discount": "25% off"
-    },
-    {
-        title: "STAG Table Tennis Racket Case (Square)",
-        "desc": "STAG Table Tennis Racket Case (Square) ",
-        "img": "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-        "currency": "INR ",
-        price: "220",
-        mrp: "220",
-        "discount": "0% off"
-    },
-    {
-        title: "STAG Table Tennis Racket Case (Round Padaed)",
-        "desc": "STAG Table Tennis Racket Case (Round Padaed) ",
-        "img": "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-        "currency": "INR ",
-        price: "160",
-        mrp: "160",
-        "discount": "0% off"
-    },
-    {
-        title: "Butterfly STM Table Tennis Case (Pink)",
-        "desc": "Butterfly STM Table Tennis Case (Pink) ",
-        "img": "https://martjackassets.blob.core.windows.net/css/storeui/images/show_loader.gif",
-        "currency": "INR ",
-        price: "2600",
-        mrp: "1950",
-        "discount": "25% off"
-    },
+   
+   
     {
         title: "Butterfly STM Table Tennis Case (Silver)",
         "desc": "Butterfly STM Table Tennis Case (Silver) ",

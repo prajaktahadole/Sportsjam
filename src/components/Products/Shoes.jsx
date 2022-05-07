@@ -1,6 +1,6 @@
 
 import { Sidebar } from "../Sidebar/sidebar";
-import { Rackets } from '../../configs/Badminton'
+import { Shoe } from '../../configs/Shoes'
 // import { Link } from "react-router-dom";
 import { Footer } from "../footer/footer";
 import './sports.css'
@@ -16,7 +16,7 @@ export const Shoes = () => {
         </div>
 
         <div className="grid-format">
-          {Rackets.map((el) => {
+          {Shoe.map((el) => {
             return (
               <>
                 <div >
@@ -32,7 +32,7 @@ export const Shoes = () => {
                       <div className="price-list">
                         <p className="productprice-linethrough" key={el.id}>${el.price}</p>
                         <p className="productprice" key={el.id}>${el.mrp}</p>
-                        <p className="product-discount" key={el.id}>{el.discount}%off</p>
+                        <p className="product-discount" key={el.id}>{el.discount}</p>
                       </div>
                       <div className="btn"><button>Cart</button></div>
                     </div>

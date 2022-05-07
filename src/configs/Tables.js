@@ -184,8 +184,8 @@ export const tables = [
     desc: "\nAs Robust and stylish as the name PETER KARLSSON. This table with exceptional playing qualities is the latest addition to the exhaustive range of STAG table tennis tables. Suitable for high level competition and also an exclusive piece for any playing area. ",
     img: "https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/STATTTB2010_L1.jpg",
     currency: "INR ",
-    price: "83000",
-    mrp: "74699",
+    price: "8000",
+    mrp: "3699",
     discount: "10% off",
   },
   {

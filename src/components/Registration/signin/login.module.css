@@ -95,7 +95,9 @@
      margin-bottom: 20px!important;
      color: white !important;
      font-weight: 400 !important;
- }
+     height: 2rem;
+
+    }
 
  .passgrid{
      display: flex;

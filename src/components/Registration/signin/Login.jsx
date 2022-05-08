@@ -59,7 +59,7 @@ export const Login = () => {
       let user = {}
       user= resp.data.user
       if(resp.status===201){
-        navigate(-1, {replace:true}) 
+        navigate("/") 
         console.log("payload",user)
         dispatch({ type: "LOGIN", payload:user });
       }else

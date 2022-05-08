@@ -91,9 +91,6 @@ export const Landing = ()=>{
     <div className='homeDiv4'>
       <img  className='home_imgg'  src='https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/asics-tennis-shoes.jpg'  ></img>
     </div>
-
-
-
     <div className='homeDiv5'>
 
       {/* <Carousel2></Carousel2> */}

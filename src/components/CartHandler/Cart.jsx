@@ -1,8 +1,9 @@
 import React, { createContext, useReducer, useEffect } from "react";
-import "./cart.css";
+
 import { products } from "./products";
 import ContextCart from "./ContextCart";
-import { reducer } from "./reducer";
+import { reducer } from "../../redux/reducer";
+
 
 export const CartContext = createContext();
 
@@ -13,7 +14,7 @@ const initialState = {
   
 };
 
-const Cart = () => {
+export const Cart = () => {
   // const [item, setItem] = useState(products);
   const [state, dispatch] = useReducer(reducer, initialState);
 

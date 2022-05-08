@@ -23,6 +23,9 @@ export const NavBar = () => {
   const wishListHandler = () => {
     navigate("/wishlist");
   };
+  const cartHandler = ()=>{
+    navigate("/Cart");
+  }
   return (
     <>
       <div className={styles.navBarWrapper}>
@@ -64,7 +67,7 @@ export const NavBar = () => {
               <SearchSharpIcon style={{ color: "grey" }} />
             </div>
           </div>
-          <div className={styles.navBarLayer2Cart}>
+          <div className={styles.navBarLayer2Cart} onClick={cartHandler}>
             <ShoppingCartSharpIcon
               style={{ color: "rgb(51,51,51)", fontSize: "50px" }}
             />

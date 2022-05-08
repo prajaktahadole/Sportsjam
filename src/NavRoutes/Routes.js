@@ -37,6 +37,9 @@ import { Swimwear } from "../components/Products/Swimwear";
 import { Tables } from "../components/Products/Tables";
 import { Tennisshoes } from "../components/Products/TennisShoes";
 import { Volleyballs } from "../components/Products/Volleyballs";
+import { Cart } from "../components/CartHandler/Cart";
+import { Checkout } from "../components/CheckoutHandler/CheckoutHandler";
+import { ProtectedRoute } from "./PrivateRoutes";
 
 export const Routing = () => {
   return (
@@ -48,10 +51,16 @@ export const Routing = () => {
         <Route path="/signup" element={<Signup></Signup>}></Route>
         <Route path="/wishlist" element={<Wishlist></Wishlist>}></Route>
         <Route path="/Abtrainers" element={<Abtrainers></Abtrainers>}></Route>
-        <Route path="/Accessories" element={<Accessories></Accessories>}></Route>
+        <Route
+          path="/Accessories"
+          element={<Accessories></Accessories>}
+        ></Route>
         <Route path="/Agility" element={<Agility></Agility>}></Route>
         <Route path="/Badminton" element={<Badminton></Badminton>}></Route>
-        <Route path="/Balanceboard" element={<Balanceboard></Balanceboard>}></Route>
+        <Route
+          path="/Balanceboard"
+          element={<Balanceboard></Balanceboard>}
+        ></Route>
         <Route path="/Balls" element={<Balls></Balls>}></Route>
         <Route path="/Basketball" element={<Basketball></Basketball>}></Route>
         <Route path="/Batcase" element={<Batcase></Batcase>}></Route>
@@ -59,12 +68,24 @@ export const Routing = () => {
         <Route path="/Billiards" element={<Billiards></Billiards>}></Route>
         <Route path="/Caps" element={<Caps></Caps>}></Route>
         <Route path="/Cycles" element={<Cycles></Cycles>}></Route>
-        <Route path="/Dartsdartsboard" element={<Dartsdartsboard></Dartsdartsboard>}></Route>
+        <Route
+          path="/Dartsdartsboard"
+          element={<Dartsdartsboard></Dartsdartsboard>}
+        ></Route>
         <Route path="/Equipments" element={<Equipments></Equipments>}></Route>
-        <Route path="/Fitnessmats" element={<Fitnessmats></Fitnessmats>}></Route>
+        <Route
+          path="/Fitnessmats"
+          element={<Fitnessmats></Fitnessmats>}
+        ></Route>
         <Route path="/Footballs" element={<Footballs></Footballs>}></Route>
-        <Route path="/Footballshoes" element={<Footballshoes></Footballshoes>}></Route>
-        <Route path="/Goaliegloves" element={<Goaliegloves></Goaliegloves>}></Route>
+        <Route
+          path="/Footballshoes"
+          element={<Footballshoes></Footballshoes>}
+        ></Route>
+        <Route
+          path="/Goaliegloves"
+          element={<Goaliegloves></Goaliegloves>}
+        ></Route>
         <Route path="/Goggles" element={<Goggles></Goggles>}></Route>
         <Route path="/Grips" element={<Grips></Grips>}></Route>
         <Route path="/Handgrips" element={<Handgrips></Handgrips>}></Route>
@@ -72,14 +93,35 @@ export const Routing = () => {
         <Route path="/Rubbers" element={<Rubbers></Rubbers>}></Route>
         <Route path="/Shingaurds" element={<Shingaurds></Shingaurds>}></Route>
         <Route path="/Shoes" element={<Shoes></Shoes>}></Route>
-        <Route path="/Shuttlecock" element={<Shuttlecock></Shuttlecock>}></Route>
-        <Route path="/Skippingropes" element={<Skippingropes></Skippingropes>}></Route>
+        <Route
+          path="/Shuttlecock"
+          element={<Shuttlecock></Shuttlecock>}
+        ></Route>
+        <Route
+          path="/Skippingropes"
+          element={<Skippingropes></Skippingropes>}
+        ></Route>
         <Route path="/Stepper" element={<Stepper></Stepper>}></Route>
         <Route path="/Strings" element={<Strings></Strings>}></Route>
         <Route path="/Swimwear" element={<Swimwear></Swimwear>}></Route>
         <Route path="/Tables" element={<Tables></Tables>}></Route>
-        <Route path="/Tennisshoes" element={<Tennisshoes></Tennisshoes>}></Route>
-        <Route path="/Volleyballs" element={<Volleyballs></Volleyballs>}></Route>
+        <Route
+          path="/Tennisshoes"
+          element={<Tennisshoes></Tennisshoes>}
+        ></Route>
+        <Route
+          path="/Volleyballs"
+          element={<Volleyballs></Volleyballs>}
+        ></Route>
+        <Route path="/cart" element={<Cart></Cart>}></Route>
+        <Route
+          path="/Checkout"
+          element={
+            <ProtectedRoute>
+              <Checkout></Checkout>
+            </ProtectedRoute>
+          }
+        ></Route>
       </Routes>
     </>
   );

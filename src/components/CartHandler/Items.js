@@ -1,35 +1,49 @@
 import React, { useContext } from "react";
 import { CartContext } from "./Cart";
+import styles from "./cart.module.css";
 
 const Items = ({ id, description, title, img, price, quantity }) => {
   const { removeItem, increment, decrement } = useContext(CartContext);
 
   return (
     <>
-      <div className="items-info">
-        <div className="product-img">
+      <div className={styles.itemsinfo}>
+        <div className={styles.productimg}>
           <img src={img} alt="iamge" />
         </div>
 
-        <div className="title">
+        <div className={styles.title}>
           <h2>{title}</h2>
           <p>{description}</p>
         </div>
 
-        <div className="add-minus-quantity">
-          <i className="fas fa-minus minus" onClick={() => decrement(id)}></i>
+        <div className={styles.addminusquantity}>
+          <i
+            className={styles.fasfaminusminus}
+            onClick={() => decrement(id)}
+            style={{ cursor: "pointer" }}
+          >
+            -
+          </i>
           <input type="text" placeholder={quantity} disabled />
-          <i className="fas fa-plus add" onClick={() => increment(id)}></i>
+          <i
+            className={styles.fasfaplusadd}
+            onClick={() => increment(id)}
+            style={{ cursor: "pointer" }}
+          >
+            +
+          </i>
         </div>
 
-        <div className="price">
+        <div className={styles.price}>
           <h3>₹ {price}</h3>
         </div>
 
-        <div className="remove-item">
+        <div className={styles.removeitem}>
           <i
-            className="fas fa-trash-alt remove"
-            onClick={() => removeItem(id)}></i>
+            className={styles.fasfatrashaltremove}
+            onClick={() => removeItem(id)}
+          ></i>
         </div>
       </div>
 

@@ -1,13 +1,10 @@
-
-
-.homeDivMain{
-   
-    margin: auto;
+.homeDivMain {
+  margin: auto;
 }
-.homeDivMain>div{
-    width: 98%;
-    margin: auto;
-    margin-bottom: 30px;
+.homeDivMain > div {
+  width: 98%;
+  margin: auto;
+  margin-bottom: 30px;
 }
 .homeDivMain > div {
   width: 98%;
@@ -28,7 +25,6 @@
 }
 
 .homeDiv3inner {
-  /* border: 1px solid green; */
   width: 48%;
   margin-right: 5%;
 }
@@ -42,8 +38,6 @@ img {
   margin-left: 5%;
   width: 50%;
 }
-
-/* overlay */
 
 .overlay-sec {
   display: flex;
@@ -78,23 +72,20 @@ img {
 }
 .overlay-img-box:hover .img-overlay {
   bottom: 5px;
-} */
-
-/* /* .img-overlay > * {
+}
+.img-overlay > * {
   transition: transform 0.3s;
-} */
+}
 
 .img-overlay:hover {
   opacity: 1;
 }
 
-
-.img-overlay > button:hover { 
+.img-overlay > button:hover {
   transform: translateY(0);
   background-color: white;
   color: black;
- }
-
+}
 
 .img-overlay > button {
   background-color: rgb(146, 141, 141, 0.6);

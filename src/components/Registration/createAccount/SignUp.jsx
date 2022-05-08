@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import style from "./Signup.module.css";
 import * as React from "react";
 import Button from "@mui/material/Button";
@@ -9,19 +9,19 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Footer } from "../../footer/footer";
+import axios from "axios";
 
 const theme = createTheme();
 
 export const Signup = () => {
   const [values, setValues] = useState({
-    firstName: "",
-    mobileno: "",
+    firstName : "",
+    mobileNo: "",
     email: "",
     password: "",
-    confirmpassword: "",
   });
 
-  const [error, setError] = useState({});
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -30,24 +30,19 @@ export const Signup = () => {
       [name]: value,
     });
   };
-
-  // handleSubmit = (event) => {
-  //   alert(`${this.state.firstName} ${this.state.lastName}  Registered Successfully !!!!`)
-  //   console.log(this.state);
-  //   this.setState({
-  //       firstName: "",
-  //       lastName: "",
-  //       password: '',
-  //       gender: "",
-  //   })
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    const headers = { "Content-Type": "application/json" };
+    try {
+      const resp = await axios.post(
+        "https://cw4tanishq.herokuapp.com/register",
+        values,
+        { headers: headers }
+      );
+      console.log(resp);
+    } catch (error) {
+      alert(error.message);
+    }
   };
 
   return (
@@ -109,12 +104,7 @@ export const Signup = () => {
               {/* <Typography component="h1" variant="h5">
             Sign up
           </Typography> */}
-              <Box
-                component="form"
-                noValidate
-                onSubmit={handleSubmit}
-                sx={{ mt: 3 }}
-              >
+              <Box component="form" noValidate sx={{ mt: 3 }}>
                 <Grid container spacing={2}>
                   <label className={style.inputlablename}>
                     {" "}
@@ -145,7 +135,7 @@ export const Signup = () => {
                       required
                       fullWidth
                       id="mobileno"
-                      name="mobileno"
+                      name="mobileNo"
                       autoComplete="family-name"
                       value={values.mobileno}
                       onChange={handleChange}
@@ -215,8 +205,9 @@ export const Signup = () => {
                   className={style.submitbtn}
                   type="submit"
                   fullWidth
+                  onClick={handleRegister}
                   // variant="contained"
-                  sx={{ mt: 3, mb: 2 }}
+                  // sx={{  mb: -2 }}
                 >
                   Submit
                 </Button>

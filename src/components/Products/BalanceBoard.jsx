@@ -5,8 +5,13 @@ import { BalanceBoard } from '../../configs/Balance Board.js'
 // import { Link } from "react-router-dom";
 import './sports.css'
 import { Footer } from "../footer/footer";
+import { useDispatch } from "react-redux";
 
 export const Balanceboard  = () => {
+  const dispatch = useDispatch();
+  const addtocartarr = (el) => {
+    dispatch({ type: "ADDCART", payload: el });
+  };
 
   return (
     <>
@@ -35,7 +40,7 @@ export const Balanceboard  = () => {
                         <p className="productprice" key={el.id}>${el.mrp}</p>
                         <p className="product-discount" key={el.id}>{el.discount}</p>
                       </div>
-                      <div className="btn-cart"><button>Cart</button></div>
+                      <div className="btn-cart"><button onClick={addtocartarr.bind(null, el)}>Cart</button></div>
                     </div>
                   </div>
                   {/* </Link> */}

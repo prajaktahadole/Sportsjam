@@ -78,21 +78,23 @@ img {
 }
 .overlay-img-box:hover .img-overlay {
   bottom: 5px;
-}
+} */
 
-.img-overlay > * {
+/* /* .img-overlay > * {
   transition: transform 0.3s;
-}
+} */
 
 .img-overlay:hover {
   opacity: 1;
 }
 
-.img-overlay > button:hover {
-  /* transform: translateY(0); */
+
+.img-overlay > button:hover { 
+  transform: translateY(0);
   background-color: white;
   color: black;
-}
+ }
+
 
 .img-overlay > button {
   background-color: rgb(146, 141, 141, 0.6);

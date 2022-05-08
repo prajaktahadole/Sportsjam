@@ -7,9 +7,12 @@ import SearchSharpIcon from "@mui/icons-material/SearchSharp";
 import logo from "../../ImageData/logo.jpg";
 import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
 import { Link, useNavigate } from "react-router-dom";
-import { nav,navmain } from "../../Addressmaps/maps";
+import { nav, navmain } from "../../Addressmaps/maps";
+import { useSelector, useDispatch } from "react-redux";
 
 export const NavBar = () => {
+  const dispatch = useDispatch();
+  const myState = useSelector((state) => state.loginReducer);
   const navigate = useNavigate();
   const homeHandler = () => {
     navigate("/");
@@ -23,29 +26,55 @@ export const NavBar = () => {
   const wishListHandler = () => {
     navigate("/wishlist");
   };
-  const cartHandler = ()=>{
-    navigate("/Cart");
-  }
+  const cartHandler = () => {
+    navigate("/cart");
+  };
+  const signOutHandler = () => {
+    dispatch({ type: "LOGOUT" });
+    navigate("/");
+  };
   return (
     <>
       <div className={styles.navBarWrapper}>
         <div className={styles.navBarLayer1}>
           <div className={styles.navBarLayer1Actions}>
             <div className={styles.navBarLayer1Support}>
-              <LocalPhoneIcon style={{ color: "white", fontSize:"20px" }} />
+              <LocalPhoneIcon style={{ color: "white", fontSize: "20px" }} />
               <p>Call Us:+93-955543555</p>
             </div>
-            <div className={styles.navBarLayer1Signin} onClick={signInHandler}>
-              <KeyboardDoubleArrowRightIcon style={{ color: "white" }} />
-              <p>Sign in</p>
-            </div>
-            <div
-              className={styles.navBarLayer1CreateAcc}
-              onClick={signUpHandler}
-            >
-              <ManIcon style={{ color: "white" }} />
-              <p>Create Account</p>
-            </div>
+            {!myState.isLoggedIn && (
+              <div
+                className={styles.navBarLayer1Signin}
+                onClick={signInHandler}
+              >
+                <KeyboardDoubleArrowRightIcon style={{ color: "white" }} />
+                <p>Sign in</p>
+              </div>
+            )}
+            {myState.isLoggedIn && (
+              <div
+                className={styles.navBarLayer1Signout}
+                onClick={signOutHandler}
+              >
+                <KeyboardDoubleArrowRightIcon style={{ color: "white" }} />
+                <p>Sign Out</p>
+              </div>
+            )}
+            {myState.isLoggedIn && (
+              <div className={styles.navBarLayer1Username}>
+                <KeyboardDoubleArrowRightIcon style={{ color: "white" }} />
+                <p>{myState.user.firstName}</p>
+              </div>
+            )}
+            {!myState.isLoggedIn && (
+              <div
+                className={styles.navBarLayer1CreateAcc}
+                onClick={signUpHandler}
+              >
+                <ManIcon style={{ color: "white" }} />
+                <p>Create Account</p>
+              </div>
+            )}
             <div
               className={styles.navBarLayer1Wishlist}
               onClick={wishListHandler}
@@ -76,7 +105,7 @@ export const NavBar = () => {
         </div>
         <div className={styles.navBarLayer3}>
           <div className={styles.navBarLayer3RoutesDiv}>
-            <div className={styles.navBarLayer3RoutesDivMain}>
+            <div id={styles.navBarLayer3RoutesDivMain}>
               <p>ALL</p>
               <div className={styles.navBarLayer3RoutesDivMaincontent}>
                 {navmain.map((e) => (

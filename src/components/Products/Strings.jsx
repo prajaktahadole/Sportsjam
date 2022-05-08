@@ -6,7 +6,7 @@ import { String } from '../../configs/Strings'
 import { Footer } from "../footer/footer";
 import './sports.css'
 import { useEffect, useState } from "react"
-
+import { useDispatch } from "react-redux";
 export const Strings = () => {
   const [data, setData] = useState([]);
 
@@ -20,6 +20,10 @@ export const Strings = () => {
   const handleChange = (item) => {
     console.log("item:", item);
     setData(item);
+  };
+  const dispatch = useDispatch();
+  const addtocartarr = (el) => {
+    dispatch({ type: "ADDCART", payload: el });
   };
   return (
     <>
@@ -56,7 +60,7 @@ export const Strings = () => {
                           </p>
                         </div>
                         <div className="btn-cart">
-                          <button>Cart</button>
+                          <button onClick={addtocartarr.bind(null, el)}>Cart</button>
                         </div>
                       </div>
                     </div>

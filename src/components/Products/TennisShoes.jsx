@@ -5,9 +5,13 @@ import { TennisShoe } from '../../configs/TennisShoes'
 // import { Link } from "react-router-dom";
 import { Footer } from "../footer/footer";
 import './sports.css'
+import { useDispatch } from "react-redux";
 
 export const Tennisshoes = () => {
-
+  const dispatch = useDispatch();
+  const addtocartarr = (el) => {
+    dispatch({ type: "ADDCART", payload: el });
+  };
   return (
     <>
       <div className="main-container">
@@ -35,7 +39,7 @@ export const Tennisshoes = () => {
                         <p className="productprice" key={el.id}>${el.mrp}</p>
                         <p className="product-discount" key={el.id}>{el.discount}</p>
                       </div>
-                      <div className="btn-cart"><button>Cart</button></div>
+                      <div className="btn-cart"><button onClick={addtocartarr.bind(null, el)}>Cart</button></div>
                     </div>
                   </div>
                   {/* </Link> */}

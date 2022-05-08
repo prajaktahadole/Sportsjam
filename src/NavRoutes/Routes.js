@@ -40,6 +40,7 @@ import { Volleyballs } from "../components/Products/Volleyballs";
 import { Cart } from "../components/CartHandler/Cart";
 import { Checkout } from "../components/CheckoutHandler/CheckoutHandler";
 import { ProtectedRoute } from "./PrivateRoutes";
+import { Orderplace } from "../components/ThankyouHandler/Orderplace";
 
 export const Routing = () => {
   return (
@@ -119,6 +120,14 @@ export const Routing = () => {
           element={
             <ProtectedRoute>
               <Checkout></Checkout>
+            </ProtectedRoute>
+          }
+        ></Route>
+        <Route
+          path="/thankyou"
+          element={
+            <ProtectedRoute>
+              <Orderplace></Orderplace>
             </ProtectedRoute>
           }
         ></Route>

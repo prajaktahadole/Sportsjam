@@ -7,6 +7,7 @@ import { BatCases } from '../../configs/BatCase'
 import './sports.css'
 import { Footer } from "../footer/footer";
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 
 export const Batcase = () => {
   const [data, setData] = useState([]);
@@ -21,6 +22,10 @@ export const Batcase = () => {
   const handleChange = (item) => {
     console.log("item:", item);
     setData(item);
+  };
+  const dispatch = useDispatch();
+  const addtocartarr = (el) => {
+    dispatch({ type: "ADDCART", payload: el });
   };
   return (
     <>
@@ -57,7 +62,7 @@ export const Batcase = () => {
                           </p>
                         </div>
                         <div className="btn-cart">
-                          <button>Cart</button>
+                          <button onClick={addtocartarr.bind(null, el)}>Cart</button>
                         </div>
                       </div>
                     </div>

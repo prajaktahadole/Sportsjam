@@ -6,9 +6,14 @@ import { Basketballs } from '../../configs/Basketball'
 import './sports.css'
 import { Footer } from "../footer/footer";
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 
 export const Basketball = () => {
   const [data, setData] = useState([]);
+  const dispatch = useDispatch();
+  const addtocartarr = (el) => {
+    dispatch({ type: "ADDCART", payload: el });
+  };
 
   useEffect(() => {
     const nData = Basketballs.map((e) => {
@@ -56,7 +61,7 @@ export const Basketball = () => {
                           </p>
                         </div>
                         <div className="btn-cart">
-                          <button>Cart</button>
+                          <button onClick={addtocartarr.bind(null, el)}>Cart</button>
                         </div>
                       </div>
                     </div>

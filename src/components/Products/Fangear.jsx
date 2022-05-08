@@ -5,8 +5,13 @@ import { Rackets } from '../../configs/Badminton'
 import { Footer } from "../footer/footer";
 // import { Link } from "react-router-dom";
 import './sports.css'
+import { useDispatch } from "react-redux";
 
 export const Fangear = () => {
+  const dispatch = useDispatch();
+  const addtocartarr = (el) => {
+    dispatch({ type: "ADDCART", payload: el });
+  };
 
   return (
     <>
@@ -35,7 +40,7 @@ export const Fangear = () => {
                         <p className="productprice" key={el.id}>${el.mrp}</p>
                         <p className="product-discount" key={el.id}>{el.discount}%off</p>
                       </div>
-                      <div className="btn"><button>Cart</button></div>
+                      <div className="btn"><button onClick={addtocartarr.bind(null, el)}>Cart</button></div>
                     </div>
                   </div>
                   {/* </Link> */}

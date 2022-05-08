@@ -12,7 +12,6 @@ import style from "./login.module.css";
 import ClearIcon from "@mui/icons-material/Clear";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { loginReducer } from "../../../redux/reducer";
 import axios from "axios";
 
 import { useState } from "react";
@@ -40,36 +39,31 @@ const theme = createTheme();
 export const Login = () => {
   const myState = useSelector((state) => state.loginReducer);
   const [details, setDetails] = useState({
-    username: "",
+    email: "",
     password: "",
   });
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const loginHandle = async (e) => {
+    e.preventDefault()
+    const headers = { "Content-Type": "application/json" };
+    console.log(details)
+
     try {
-      e.preventDefault();
-      const resp = await axios.get("https://cw4tanishq.herokuapp.com/login");
-      console.log(resp);
-      console.log(myState);
-      if (resp.status !== 200) {
-        throw new Error("Unable to login");
-      }
-      let user = {};
-      for (var i = 0; i < resp.data.length; i++) {
-        if (
-          resp.data[i].username === details.username &&
-          resp.data[i].pass === details.password
-        ) {
-          user = resp.data[i];
-          break;
-        }
-      }
-      if (!user.password) {
-        throw new Error("Unable to login");
-      }
-      dispatch({ type: "LOGIN", payload: user });
-        //Enter route
-        navigate("/", {replace:true})
+      const resp = await axios.post(
+        "https://cw4tanishq.herokuapp.com/login",
+        details,
+        { headers: headers }
+      );
+      console.log(resp)
+      let user = {}
+      user= resp.data.user
+      if(resp.status===201){
+        navigate(-1, {replace:true}) 
+        console.log("payload",user)
+        dispatch({ type: "LOGIN", payload:user });
+      }else
+      throw new Error("Unable to login");
     } catch (error) {
       alert(error.message);
     }
@@ -158,7 +152,7 @@ export const Login = () => {
                             required
                             fullWidth
                             id="email"
-                            name="username"
+                            name="email"
                             autoComplete="email"
                             autoFocus
                             onChange={handleChange}

@@ -16,6 +16,7 @@
   width: 380px !important;
   margin-left: 95px !important;
   margin-bottom: 1;
+  overflow: hidden;
 }
 
 .topHeading {

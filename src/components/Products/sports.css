@@ -29,9 +29,7 @@ p{
 .eachdiv:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-img:hover{
-    opacity: 0.5;
-}
+
 
 .productimgdiv>img{
     height: 350px;

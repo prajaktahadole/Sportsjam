@@ -6,6 +6,7 @@ import { kitbag } from '../../configs/KitBags'
 // import { Link } from "react-router-dom";
 import { Footer } from "../footer/footer";
 import './sports.css'
+import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 
 export const Kitbags = () => {
@@ -21,6 +22,10 @@ export const Kitbags = () => {
   const handleChange = (item) => {
     console.log("item:", item);
     setData(item);
+  };
+  const dispatch = useDispatch();
+  const addtocartarr = (el) => {
+    dispatch({ type: "ADDCART", payload: el });
   };
   return (
     <>
@@ -57,7 +62,7 @@ export const Kitbags = () => {
                           </p>
                         </div>
                         <div className="btn-cart">
-                          <button>Cart</button>
+                          <button onClick={addtocartarr.bind(null, el)}>Cart</button>
                         </div>
                       </div>
                     </div>

@@ -9,4 +9,9 @@ export const Logout = ()=>{
         type : "LOGOUT"
     }
 }
+export const ADDCART = ()=>{
+    return {
+        type:"ADDCART"
+    }
+}
 // Action Creators

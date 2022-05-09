@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { Navigate } from "react-router-dom";
 export const ProtectedRoute = ({ children }) => {
   const myState = useSelector((state) => state.loginReducer);

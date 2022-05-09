@@ -6,6 +6,7 @@ import { Rubber } from '../../configs/Rubbers'
 import { Footer } from "../footer/footer";
 import { useEffect, useState } from "react"
 import './sports.css'
+import { useDispatch } from "react-redux";
 
 export const Rubbers = () => {
   const [data, setData] = useState([]);
@@ -20,6 +21,10 @@ export const Rubbers = () => {
   const handleChange = (item) => {
     console.log("item:", item);
     setData(item);
+  };
+  const dispatch = useDispatch();
+  const addtocartarr = (el) => {
+    dispatch({ type: "ADDCART", payload: el });
   };
   return (
     <>
@@ -56,7 +61,7 @@ export const Rubbers = () => {
                           </p>
                         </div>
                         <div className="btn-cart">
-                          <button>Cart</button>
+                          <button onClick={addtocartarr.bind(null, el)}>Cart</button>
                         </div>
                       </div>
                     </div>

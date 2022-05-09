@@ -1,10 +1,4 @@
 
-
-.homeDivMain{
-   text-align: center;
-    margin: auto;
-}
-
 .homeDivMain > div {
   width: 98%;
   margin: auto;
@@ -23,7 +17,6 @@
 }
 
 .homeDiv3inner {
-  /* border: 1px solid green; */
   width: 48%;
   margin-right: 5%;
 }
@@ -38,8 +31,6 @@
   margin-left: 5%;
   width: 50%;
 }
-
-/* overlay */
 
 .overlay-sec {
   display: flex;
@@ -75,7 +66,6 @@
 .overlay-img-box:hover .img-overlay {
   bottom: 5px;
 }
-
 .img-overlay > * {
   transition: transform 0.3s;
 }
@@ -85,7 +75,7 @@
 }
 
 .img-overlay > button:hover {
-  /* transform: translateY(0); */
+  transform: translateY(0);
   background-color: white;
   color: black;
 }

@@ -1,6 +1,19 @@
 import "bootstrap";
+import { useNavigate } from "react-router-dom";
 import "./checkout.css";
+import { useSelector } from "react-redux";
 export const Checkout = () => {
+  const myState = useSelector((store) => store.loginReducer);
+  const navigate = useNavigate();
+  const lastPage = (e) => {
+    e.preventDefault();
+    navigate("/thankyou");
+  };
+  let total = 0;
+  myState.cart.forEach((item) => {
+    total = total + Number(item.price);
+  });
+
   return (
     <div>
       <div className="manidiv-s">
@@ -134,6 +147,7 @@ export const Checkout = () => {
                   as billing
                 </label>
                 <input
+                  onClick={lastPage}
                   type="submit"
                   value="Continue to checkout"
                   className="btn"
@@ -145,32 +159,13 @@ export const Checkout = () => {
         <div className="right div-s">
           <div className="col-25">
             <div className="container">
-              <h4>
-                Cart
-                <span className="price" style={{ color: "black" }}>
-                  <i className="fa fa-shopping-cart" />
-                  <b>4</b>
-                </span>
-              </h4>
-              <p>
-                <a href="#">Product 1</a> <span className="price">15</span>
-              </p>
-              <p>
-                <a href="#">Product 2</a> <span className="price">5</span>
-              </p>
-              <p>
-                <a href="#">Product 3</a> <span className="price">8</span>
-              </p>
-              <p>
-                <a href="#">Product 4</a> <span className="price">2</span>
-              </p>
-              <hr />
-              <p>
-                Total{" "}
-                <span className="price" style={{ color: "black" }}>
-                  <b>30</b>
-                </span>
-              </p>
+              {myState.cart.map((e) => (
+                <>
+                  <h3>{e.title}</h3>
+                  <h3>{e.price}</h3>
+                </>
+              ))}
+              <h2>TOTAL:{total}</h2>
             </div>
           </div>
         </div>

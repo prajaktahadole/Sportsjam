@@ -6,6 +6,7 @@ import { tables } from '../../configs/Tables'
 import { Footer } from "../footer/footer";
 import './sports.css'
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 
 export const Tables = () => {
   const [data, setData] = useState([]);
@@ -20,6 +21,10 @@ export const Tables = () => {
   const handleChange = (item) => {
     console.log("item:", item);
     setData(item);
+  };
+  const dispatch = useDispatch();
+  const addtocartarr = (el) => {
+    dispatch({ type: "ADDCART", payload: el });
   };
   return (
     <>
@@ -56,7 +61,7 @@ export const Tables = () => {
                           </p>
                         </div>
                         <div className="btn-cart">
-                          <button>Cart</button>
+                          <button onClick={addtocartarr.bind(null, el)}>Cart</button>
                         </div>
                       </div>
                     </div>

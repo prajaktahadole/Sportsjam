@@ -112,11 +112,7 @@ export const Landing = ()=>{
              with no shipping charges if you purchase above Rs.1000. Scout through your favourite brands with latest technologies.
             Just click & be its proud owner, at the best available price in the market. Come, help us help you to fly high with your new &
            improved game with high quality sportsgear!</p>
-<<<<<<< HEAD
            <button  class="home-btn">FIND OUR STORE</button>
-=======
-           <button  class="btn">FIND OUR STORE</button>
->>>>>>> 23ed650545f61effe61a666680434850223a435e
       </div>
     </div>
 
@@ -132,11 +128,7 @@ export const Landing = ()=>{
         reply. Even during giving the free tshirt, you guys called to know the size, but unfortunately the size is large
         on me. Any chances I can exchange with M size. Although I am loving my new racquet. - <b>Rajnish, New Delhi</b>
     </p>
-<<<<<<< HEAD
     <a class="home-btn" href="/pages/testimonials/pgid-1304966.aspx">View All</a>    
-=======
-    <a class="btn" href="/pages/testimonials/pgid-1304966.aspx">View All</a>    
->>>>>>> 23ed650545f61effe61a666680434850223a435e
     </div>
 
 

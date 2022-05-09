@@ -9,6 +9,7 @@ export const nav = [
   { title: "BRANDS" },
 ];
 export const navmain = [
+  { title: "Volley balls", to: "/Volleyballs" },
   { title: "Abtrainers", to: "/Abtrainers" },
   { title: "Accessories", to: "/Accessories" },
   { title: "Agility", to: "/Agility" },
@@ -41,5 +42,4 @@ export const navmain = [
   { title: "Swimwear", to: "/Swimwear" },
   { title: "Tables", to: "/Tables" },
   { title: "Tennis shoes", to: "/Tennisshoes" },
-  { title: "Volley balls", to: "/Volleyballs" },
 ];

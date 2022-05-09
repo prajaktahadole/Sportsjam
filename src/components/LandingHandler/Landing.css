@@ -1,11 +1,20 @@
-
 .homeDivMain > div {
   width: 98%;
   margin: auto;
   margin-bottom: 30px;
 }
-
-.homeDiv3, .homeDiv6 {
+.homeDivZero > .homeCenter {
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
+.homeCenter {
+  text-align: center;
+}
+.homeDiv3,
+.homeDiv6 {
   display: flex;
   margin: auto;
   /* border: 1px solid red; */
@@ -21,10 +30,9 @@
   margin-right: 5%;
 }
 
-.home_imgg{
+.home_imgg {
   width: 99%;
 }
-
 
 .homeDivinneright {
   text-align: justify;
@@ -94,8 +102,7 @@
   text-align: center;
 }
 
-
-.home-btn{
+.home-btn {
   width: 150px;
   height: 25px;
   margin-top: 15px;

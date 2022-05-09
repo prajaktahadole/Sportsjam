@@ -98,16 +98,16 @@
   /* height: 60%; */
 }
 .navBarLayer2Search {
-  width: 90%;
+  width: 150%;
   height: 60%;
 }
 .navBarLayer2Search > input {
   /* outline: none; */
   border: none;
   height: 100%;
-  width: 90%;
+  width: 100%;
   color: rgb(101, 100, 100);
-  margin-left: 20px;
+
   text-align: left;
 }
 .navBarLayer2SearchIcon {

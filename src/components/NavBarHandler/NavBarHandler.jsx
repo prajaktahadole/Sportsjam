@@ -90,7 +90,7 @@ export const NavBar = () => {
           </div>
           <div className={styles.navBarLayer2SearchDiv}>
             <div className={styles.navBarLayer2Search}>
-              <input type="text" placeholder="Search" />
+              <input className={styles.searchinput} type="text" placeholder="Search" />
             </div>
             <div className={styles.navBarLayer2SearchIcon}>
               <SearchSharpIcon style={{ color: "grey" }} />

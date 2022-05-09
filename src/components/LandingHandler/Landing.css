@@ -1,19 +1,11 @@
-.homeDivMain {
-  margin: auto;
-}
-.homeDivMain > div {
-  width: 98%;
-  margin: auto;
-  margin-bottom: 30px;
-}
+
 .homeDivMain > div {
   width: 98%;
   margin: auto;
   margin-bottom: 30px;
 }
 
-.homeDiv3,
-.homeDiv6 {
+.homeDiv3, .homeDiv6 {
   display: flex;
   margin: auto;
   /* border: 1px solid red; */
@@ -29,9 +21,10 @@
   margin-right: 5%;
 }
 
-img {
+.home_imgg{
   width: 99%;
 }
+
 
 .homeDivinneright {
   text-align: justify;
@@ -99,4 +92,13 @@ img {
 
 .img-desc {
   text-align: center;
+}
+
+
+.home-btn{
+  width: 150px;
+  height: 25px;
+  margin-top: 15px;
+  text-align: center;
+  border: 1px solid gainsboro;
 }

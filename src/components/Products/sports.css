@@ -29,9 +29,7 @@ p{
 .eachdiv:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-img:hover{
-    opacity: 0.5;
-}
+
 
 .productimgdiv>img{
     height: 350px;
@@ -55,6 +53,7 @@ img:hover{
     width: 80px;
     margin-right: 10px;
 }
+
 button{
     /* width: 100%; */
     /* height: 100%; */
@@ -66,7 +65,8 @@ button:hover{
     color: black;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     cursor: pointer;
-}
+} 
+
 .productprice-linethrough{
     text-decoration: line-through;
     color: rgb(96, 95, 95);

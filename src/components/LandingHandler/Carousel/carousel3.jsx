@@ -229,7 +229,7 @@ export const Carousel3 = () => {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 8,
-                    slidesToScroll: 2
+                    slidesToScroll: 3
                 }
             },
             {

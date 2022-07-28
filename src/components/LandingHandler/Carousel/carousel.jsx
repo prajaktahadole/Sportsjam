@@ -17,7 +17,7 @@ export const Carousel1 = () => {
 
   return (
     <>
-    <div style={{ width: "98%", MaxHeight: "90%" , margin: "auto"}}  >
+    <div style={{ width: "98%", MaxHeight: "90%" , margin: "auto" , marginBottom: "35px"}}  >
         <Slide autoplay={autoplay}>
             {slideImages.map((item) => (
                 <div className="each-slide" >

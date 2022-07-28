@@ -77,7 +77,7 @@ export const Landing = () => {
           <div className="homeDiv3inner">
             <>
               <img src={e.image} alt="" className="home_imgg"></img>
-              <h5>{e.title}</h5>
+              <h2>{e.title}</h2>
             </>
           </div>
         ))}

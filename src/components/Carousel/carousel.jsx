@@ -1,50 +1,35 @@
-import Carousel from "react-bootstrap/Carousel";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+
+const slideImages = [
+    "https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/Astrox100zz.jpg",
+    "https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/rafa21.jpg",
+    "https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/Ezone-2022.jpg",
+    "https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/PAANY-R.jpg",
+    "https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/wilson-squash.jpg",
+
+];
+
 
 export const Carousel1 = () => {
+  const [autoplay, setAutoplay] = useState(true);
+
   return (
-    <div>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/Astrox100zz.jpg"
-            alt="First slide"
-          />
-        </Carousel.Item>
+    <>
+    <div style={{ width: "98%", MaxHeight: "90%" , margin: "auto"}}  >
+        <Slide autoplay={autoplay}>
+            {slideImages.map((item) => (
+                <div className="each-slide" >
+                    <div style={{ width: "100%", height: "auto" }}>
+                        <img src={item} style={{ maxWidth: "100%", maxHeight: "100%" }} />
+                    </div>
+                </div>
+            ))}
 
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/rafa21.jpg"
-            alt="Second slide"
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/Ezone-2022.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/PAANY-R.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://storage.sg.content-cdn.io/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/userimages/wilson-squash.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-      </Carousel>
-    </div>
+        </Slide>
+    </div >
+</>
+   
   );
 };

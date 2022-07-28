@@ -1,6 +1,5 @@
-import { Carousel1 } from "../Carousel/carousel";
-//import {Carousel2} from '../Carousel/carousel2'
-import { Carousel3 } from "../Carousel/carousel3";
+import { Carousel1 } from "./Carousel/carousel";
+import { Carousel3 } from "./Carousel/carousel3";
 import "./Landing.css";
 import { Footer } from "../footer/footer";
 
@@ -50,9 +49,7 @@ export const Landing = () => {
 
   return (
     <div className="homeDivMain">
-      <div className="homeDivZero">
-        <h1 className="homeCenter">OUR TOP DEALS</h1>
-      </div>
+    
       <Carousel1></Carousel1>
 
       <div className="homeDiv1 overlay-sec">

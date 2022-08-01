@@ -1,5 +1,6 @@
 .mainScroller {
   margin-top: 0rem;
+  margin-left: 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -20,15 +21,20 @@
   border: 1px solid grey;
   display: flex;
   flex-direction: column;
-  height: 90px;
+  height: 75px;
   overflow-y: scroll;
 }
 .filterbrands {
   border: 1px solid grey;
-  height: 50px;
+  height: 60px;
   overflow-y: scroll;
 }
 .discount {
   border: 1px solid grey;
-  height: 20px;
+  height: 25px;
+  display: flex;
+}
+
+.aline{
+  display: flex;
 }

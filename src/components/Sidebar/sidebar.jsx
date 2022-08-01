@@ -72,30 +72,31 @@ export const Sidebar = ({ data, handleChange, d }) => {
             <option value="high">Price High to Low</option>
           </select>
         </div>
-        <h6>Customized Purchase</h6>
+        <h4>Customized Purchase</h4>
         <div className={styles.filterbrands}>
-          <input
+         <div className={styles.aline}>
+         <input
             type="checkbox"
             id="checkbox 1"
             name="lessthen"
-            onChange={lowProduct}
-          />
-          <label for="checkbox 1">less then 5000</label>
-          <br></br>
-          <input
+            onChange={lowProduct}/>
+           <label for="checkbox 1">less then 5000</label>
+         </div>
+          
+          <div className={styles.aline}>
+            <input
             type="checkbox"
             id="checkbox 2"
             name="morethen"
-            onChange={highProduct}
-          />
-          <label for="checkbox 2">more then 5000</label>
-          <br></br>
+            onChange={highProduct}/>
+             <label for="checkbox 2">more then 5000</label>
+          </div>
         </div>
+        
         <h4>Discounted Items</h4>
-        <div className={styles.discount}>
-          <input type="checkbox" id="checkbox 3" name="discount" />
+        <div className={styles.discount  } >
+         <input type="checkbox" id="checkbox 3" name="discount" />
           <label for="checkbox 3">Discounted Items</label>
-          <br></br>
         </div>
       </div>
     </>
